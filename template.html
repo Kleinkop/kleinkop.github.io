@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flyai.css">
+    <title>Fly AI</title>
+    
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">LOGO</div>
+            <h1 class="header-title">Build Instructions</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Project Introduction -->
+        <section class="project-intro">
+            <h2 class="project-title">Project Title Here</h2>
+            <p class="project-description">
+                Add your project introduction and description here. Explain what the user will build, 
+                what materials they'll need, and any important overview information.
+            </p>
+            <div class="final-product" onclick="showModal(this)">
+                Click to add final product image
+            </div>
+        </section>
+
+        <!-- Steps -->
+        <div class="steps-container">
+            <div class="step" id="step-1">
+                <div class="step-number">1</div>
+                <div class="step-image" onclick="showModal(this)">
+                    Click to add step 1 image
+                </div>
+                <div class="step-text">
+                    Add your step 1 instructions here. Be detailed and clear about what the user needs to do.
+                </div>
+            </div>
+
+            <div class="step" id="step-2">
+                <div class="step-number">2</div>
+                <div class="step-image" onclick="showModal(this)">
+                    Click to add step 2 image
+                </div>
+                <div class="step-text">
+                    Add your step 2 instructions here. Continue with clear, actionable directions.
+                </div>
+            </div>
+
+            <div class="step" id="step-3">
+                <div class="step-number">3</div>
+                <div class="step-image" onclick="showModal(this)">
+                    Click to add step 3 image
+                </div>
+                <div class="step-text">
+                    Add your step 3 instructions here. Keep building on the previous steps.
+                </div>
+            </div>
+
+            <div class="step" id="step-4">
+                <div class="step-number">4</div>
+                <div class="step-image" onclick="showModal(this)">
+                    Click to add step 4 image
+                </div>
+                <div class="step-text">
+                    Add your step 4 instructions here. You can add more steps by duplicating this structure.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Next Step Button -->
+    <button class="next-step-btn" onclick="scrollToNextStep()">↓</button>
+
+    <!-- Modal for full-size images -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Full size image" />
+        </div>
+    </div>
+
+    <script src="flyai.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flyai.css">
+    <title>Fly AI</title>
+    
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">LOGO</div>
+            <h1 class="header-title">Fly AI</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Project Introduction -->
+        <section class="project-intro">
+            <h2 class="project-title">Falke</h2>
+            <p class="project-description">
+        Einfach zu falten mit mittelmäßiger Reichweite sind die Eigenschaften dieses Fliegers. Das Papierflugzeug ist
+        kleiner als normale Flieger. Mit seinen großen Winglets liegt der Falke gut und stabil in der Luft. Der Falke
+        ist leicht zu falten und für jedermann verständlich. Ein Idealer Papierflieger für das Wohnzimmer
+            </p>
+            <div class="final-product" onclick="showModal(this)">
+                <img src="https://einfach-basteln.com/wp-content/uploads/2017/11/Thumbnail-6.jpg"/>
+            </div>
+        </section>
+
+        <!-- Steps -->
+        <div class="steps-container">
+            <div class="step" id="step-1">
+                <div class="step-number">1</div>
+                <div class="step-image" onclick="showModal(this)">
+                    <img fetchpriority="high" decoding="async" alt="Papierflieger Falke - Schritt 1" width="400" height="400"
+                        data-src="https://dev.einfach-basteln.com/wp-content/uploads/2017/12/PF-1.1-e1512492285417.jpg"
+                        src="https://dev.einfach-basteln.com/wp-content/uploads/2017/12/PF-1.1-e1512492285417.jpg">
+                </div>
+                <div class="step-text">
+                    Lege das Papier hochkant vor dich.                
+                </div>
+            </div>
+
+            <div class="step" id="step-2">
+                <div class="step-number">2</div>
+                <div class="step-image" onclick="showModal(this)">
+                        <img decoding="async" alt="Papierflieger Falke - Schritt 2" width="401" height="401"
+                            data-src="https://dev.einfach-basteln.com/wp-content/uploads/2017/12/PF-1.2-e1512492452286.jpg"
+                            src="https://dev.einfach-basteln.com/wp-content/uploads/2017/12/PF-1.2-e1512492452286.jpg">
+                </div>
+                <div class="step-text">
+                    Falte das Papier in der Hälfte und klappe es wieder auf.
+                </div>
+            </div>
+
+            <div class="step" id="step-3">
+                <div class="step-number">3</div>
+                <div class="step-image" onclick="showModal(this)">
+                    Click to add step 3 image
+                </div>
+                <div class="step-text">
+                    Add your step 3 instructions here. Keep building on the previous steps.
+                </div>
+            </div>
+
+            <div class="step" id="step-4">
+                <div class="step-number">4</div>
+                <div class="step-image" onclick="showModal(this)">
+                    Click to add step 4 image
+                </div>
+                <div class="step-text">
+                    Add your step 4 instructions here. You can add more steps by duplicating this structure.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Next Step Button -->
+    <button class="next-step-btn" onclick="scrollToNextStep()">↓</button>
+
+    <!-- Modal for full-size images -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Full size image" />
+        </div>
+    </div>
+
+    <script src="flyai.js"></script>
+</body>
+</html>
