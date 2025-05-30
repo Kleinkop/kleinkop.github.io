@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$PROJECT_NAME - $TITLE</title>
+    <link rel="stylesheet" href="../flyai.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">$LOGO</div>
+            <h1 class="header-title">$TITLE</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Project Introduction -->
+        <section class="project-intro">
+            <h2 class="project-title">$PROJECT_NAME</h2>
+            <div class="image-container final-product-container">
+                <img class="final-product" src="$FINAL_SRC" alt="Final" onclick="showModal(this)">
+            </div>
+            <p class="project-description">
+                $PROJECT_TEXT
+            </p>
+        </section>
+
+        <!-- Steps -->
+        <div class="steps-container">
+            $STEPS
+        </div>
+    </div>
+
+    <!-- Next Step Button -->
+    <button class="next-step-btn" onclick="scrollToNextStep()"><span style="position: relative; top: -5px;">↓</span></button>
+
+    <!-- Modal for full-size images -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Full size image" />
+        </div>
+    </div>
+
+    <script src="../flyai.js"></script>
+</body>
+</html>

@@ -33,15 +33,16 @@ function updateCurrentStep() {
 // Update current step on scroll
 window.addEventListener('scroll', updateCurrentStep);
 
+
 // Modal functionality for full-size images
 function showModal(element) {
     const modal = document.getElementById('imageModal');
     const modalImg = document.getElementById('modalImage');
     
-    // For now, just show a placeholder
-    // In real implementation, you'd set the src to the actual image
-    modalImg.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZTllY2VmIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzZjNzU3ZCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkZ1bGwgU2l6ZSBJbWFnZTwvdGV4dD48L3N2Zz4=';
-    modal.style.display = 'block';
+    if (element.tagName === 'IMG' && element.src) {
+        modalImg.src = element.src;
+        modal.style.display = 'block';
+    }
 }
 
 function closeModal() {
