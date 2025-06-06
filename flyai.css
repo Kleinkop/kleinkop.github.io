@@ -51,7 +51,7 @@ body {
 
 /* Main Content */
 .container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 1rem;
 }
@@ -178,7 +178,7 @@ body {
     max-width: calc(100% - 20px);
     width: auto;
     height: auto;
-    max-height: 400px;
+    max-height: 800px;
     object-fit: contain;
     border-radius: 8px;
     cursor: pointer;
@@ -249,8 +249,6 @@ body {
 /* Next Step Button */
 .next-step-btn {
     position: fixed;
-    bottom: 2rem;
-    right: 2rem;
     width: 60px;
     height: 60px;
     background: #3498db;
@@ -264,7 +262,14 @@ body {
     transition: all 0.3s ease;
     z-index: 50;
 }
-
+.next-step-btn-right{
+    bottom: 2rem;
+    right: 2rem;
+}
+.next-step-btn-left{
+    bottom: 2rem;
+    left: 2rem;
+}
 .next-step-btn:hover {
     background: #2980b9;
     transform: scale(1.1);
@@ -320,6 +325,11 @@ body {
     opacity: 0.7;
 }
 
+.bottom_padding {
+    padding-top: 3rem;
+
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .header {
@@ -362,27 +372,23 @@ body {
         height: 35px;
         font-size: 1rem;
     }
-
-    .image-placeholder {
-        height: 200px;
-    }
-
-    .final-product-placeholder {
-        height: 250px;
-    }
-
     .step-image, .final-product {
         max-width: calc(100% - 10px);
         margin: 5px;
-        max-height: 300px;
+        max-height: 600px;
     }
 
     .next-step-btn {
         width: 50px;
         height: 50px;
-        font-size: 1.2rem;
+    }
+    .next-step-btn-right{
         bottom: 1rem;
-        right: 1rem;
+        right: 0.75rem;
+    }
+    .next-step-btn-left{
+        bottom: 1rem;
+        left: 0.75rem;
     }
 
     .modal-content {
@@ -415,5 +421,9 @@ body {
         right: 10px;
         padding: 6px 10px;
         font-size: 0.8rem;
+    }
+    .bottom_padding {
+        padding-top: 3rem;
+
     }
 }

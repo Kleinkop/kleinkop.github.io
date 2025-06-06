@@ -131,6 +131,18 @@ function scrollToNextStep() {
     });
 }
 
+function scrollToPrevStep() {
+    if (currentStep > 0) {
+        currentStep--;
+    } else {
+        currentStep = totalSteps - 1; // Loop back to first step
+    }
+    
+    steps[currentStep].scrollIntoView({
+        behavior: 'smooth',
+        block: 'center'
+    });
+}
 // Track which step is currently visible
 function updateCurrentStep() {
     const scrollPosition = window.scrollY + window.innerHeight / 2;
@@ -177,6 +189,9 @@ document.addEventListener('keydown', function(event) {
     if (event.key === 'ArrowDown' || event.key === ' ') {
         event.preventDefault();
         scrollToNextStep();
+    } else if (event.key === 'ArrowUp'){
+        event.preventDefault();
+        scrollToPrevStep();
     } else if (event.key === 'Escape') {
         closeModal();
     }
