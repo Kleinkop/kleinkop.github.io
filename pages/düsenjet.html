@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Düsenjet - FLY.AI</title>
+    <link rel="stylesheet" href="../flyai.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">$LOGO</div>
+            <h1 class="header-title">FLY.AI</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Project Introduction -->
+        <section class="project-intro">
+            <h2 class="project-title">Düsenjet</h2>
+            <div class="image-container final-product-container">
+                <img class="final-product" src="../images_new/Düsenjet_main.png" alt="Final" onclick="showModal(this)">
+            </div>
+            <p class="project-description">
+                Eines der coolsten Flugzeuge, die man falten kann. Es gleicht einem echten Düsenjet und fliegt schneller als andere Papierflieger.
+            </p>
+        </section>
+
+        <!-- Steps -->
+        <div class="steps-container">
+                        <div class="step" id="step-1">
+                <div class="step-number">1</div>
+                <div class="image-container">
+                    <img class="step-image" src="../images_new/Düsenjet_1.png" alt="Schritt: $STEP_ID" onclick="showModal(this)">                   
+                </div>
+                <div class="step-text">
+                    Lege das Papier vor dich.    
+                </div>
+            </div>
+            <div class="step" id="step-2">
+                <div class="step-number">2</div>
+                <div class="image-container">
+                    <img class="step-image" src="../images_new/Düsenjet_2.png" alt="Schritt: $STEP_ID" onclick="showModal(this)">                   
+                </div>
+                <div class="step-text">
+                    Falte das Papier längs in die Hälfte.    
+                </div>
+            </div>
+            <div class="step" id="step-3">
+                <div class="step-number">3</div>
+                <div class="image-container">
+                    <img class="step-image" src="../images_new/Düsenjet_3.png" alt="Schritt: $STEP_ID" onclick="showModal(this)">                   
+                </div>
+                <div class="step-text">
+                    Falte nun die obere linke und rechte Kante zur mittleren Falz.    
+                </div>
+            </div>
+            <div class="step" id="step-4">
+                <div class="step-number">4</div>
+                <div class="image-container">
+                    <img class="step-image" src="../images_new/Düsenjet_4.png" alt="Schritt: $STEP_ID" onclick="showModal(this)">                   
+                </div>
+                <div class="step-text">
+                    Wiederhole den vorigen Schritt.    
+                </div>
+            </div>
+            <div class="step" id="step-5">
+                <div class="step-number">5</div>
+                <div class="image-container">
+                    <img class="step-image" src="../images_new/Düsenjet_5.png" alt="Schritt: $STEP_ID" onclick="showModal(this)">                   
+                </div>
+                <div class="step-text">
+                    Falte nun die Spitze bis zur unteren Kante des Blatts.    
+                </div>
+            </div>
+            <div class="step" id="step-6">
+                <div class="step-number">6</div>
+                <div class="image-container">
+                    <img class="step-image" src="../images_new/Düsenjet_6_1.png" alt="Schritt: $STEP_ID" onclick="showModal(this)">
+                    <img class="step-image" src="../images_new/Düsenjet_6_2.png" alt="Schritt: $STEP_ID" onclick="showModal(this)">                   
+                </div>
+                <div class="step-text">
+                    Drehe den Flieger um und falte wieder von beiden oberen Seiten zur Mitte.    
+                </div>
+            </div>
+            <div class="step" id="step-7">
+                <div class="step-number">7</div>
+                <div class="image-container">
+                    <img class="step-image" src="../images_new/Düsenjet_7.png" alt="Schritt: $STEP_ID" onclick="showModal(this)">
+                    <img class="step-image" src="../images_new/Düsenjet_7_2.png" alt="Schritt: $STEP_ID" onclick="showModal(this)">                   
+                </div>
+                <div class="step-text">
+                    Drehe den Flieger zurück und falte die Spitze wieder nach vorne.    
+                </div>
+            </div>
+            <div class="step" id="step-8">
+                <div class="step-number">8</div>
+                <div class="image-container">
+                    <img class="step-image" src="../images_new/Düsenjet_8.png" alt="Schritt: $STEP_ID" onclick="showModal(this)">                   
+                </div>
+                <div class="step-text">
+                    Falte den Flieger in der Mitte zusammen.    
+                </div>
+            </div>
+            <div class="step" id="step-9">
+                <div class="step-number">9</div>
+                <div class="image-container">
+                    <img class="step-image" src="../images_new/Düsenjet_9.png" alt="Schritt: $STEP_ID" onclick="showModal(this)">                   
+                </div>
+                <div class="step-text">
+                    Nun müssen die Flügel nach unten gefaltet werden, sodass die Kanten deckungsgleich aufeinander liegen.    
+                </div>
+            </div>
+            <div class="step" id="step-10">
+                <div class="step-number">10</div>
+                <div class="image-container">
+                    <img class="step-image" src="../images_new/Düsenjet_10.png" alt="Schritt: $STEP_ID" onclick="showModal(this)">                   
+                </div>
+                <div class="step-text">
+                    Abschließend wird nun von beiden Flügeln jeweils kleine Winglets falten. Diese sollten ca. 1 cm breit sein.    
+                </div>
+            </div>
+            <div class="step" id="step-11">
+                <div class="step-number">11</div>
+                <div class="image-container">
+                    <img class="step-image" src="../images_new/Düsenjet_11.png" alt="Schritt: $STEP_ID" onclick="showModal(this)">                   
+                </div>
+                <div class="step-text">
+                    Damit ist der Düsenjet fertig. Viel Spaß beim Fliegen!    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Next Step Button -->
+    <button class="next-step-btn" onclick="scrollToNextStep()"><span style="position: relative; top: -5px;">↓</span></button>
+
+    <!-- Modal for full-size images -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Full size image" />
+        </div>
+    </div>
+
+    <script src="../flyai.js"></script>
+</body>
+</html>
