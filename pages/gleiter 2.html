@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gleiter 2 - FLY.AI</title>
+    <link rel="stylesheet" href="../flyai.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">$LOGO</div>
+            <h1 class="header-title">FLY.AI</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Project Introduction -->
+        <section class="project-intro">
+            <h2 class="project-title">Gleiter 2</h2>
+            <div class="image-container final-product-container">
+                <img class="final-product" src="../images/Gleiter 2_main.jpg" alt="Final" onclick="showModal(this)">
+            </div>
+            <p class="project-description">
+                Dieser Gleiter ist speziell für Langstreckenflüge ausgelegt.
+Die extragroßen Winglets verleihen dem Flugzeug mehr Stabilität in der Luft - perfekt um große Distanzen zurückzulegen.
+Dieser Gleiter ist sehr einfach gehalten und für jedermann gut zu falten.
+            </p>
+        </section>
+
+        <!-- Steps -->
+        <div class="steps-container">
+                        <div class="step" id="step-1">
+                <div class="step-number">1</div>
+                <div class="step-text">
+                    Lege das Papier hochkant vor dich.    
+                </div>
+                <div class="image-container">
+                    <img class="step-image" src="../images/Gleiter 2_8.jpg" alt="Schritt: $STEP_ID" onclick="showModal(this)">                   
+                </div>
+
+            </div>
+            <div class="step" id="step-2">
+                <div class="step-number">2</div>
+                <div class="step-text">
+                    Falte das Papier längs in die Hälfte.    
+                </div>
+                <div class="image-container">
+                    <img class="step-image" src="../images/Gleiter 2_9.jpg" alt="Schritt: $STEP_ID" onclick="showModal(this)">                   
+                </div>
+
+            </div>
+            <div class="step" id="step-3">
+                <div class="step-number">3</div>
+                <div class="step-text">
+                    Falte nun die obere linke und rechte Kante zur mittleren Falz.    
+                </div>
+                <div class="image-container">
+                    <img class="step-image" src="../images/Gleiter 2_10.jpg" alt="Schritt: $STEP_ID" onclick="showModal(this)">                   
+                </div>
+
+            </div>
+            <div class="step" id="step-4">
+                <div class="step-number">4</div>
+                <div class="step-text">
+                    Wiederhole den vorigen Schritt.    
+                </div>
+                <div class="image-container">
+                    <img class="step-image" src="../images/Gleiter 2_11_1.jpg" alt="Schritt: $STEP_ID" onclick="showModal(this)">
+                    <img class="step-image" src="../images/Gleiter 2_11_2.jpg" alt="Schritt: $STEP_ID" onclick="showModal(this)">                   
+                </div>
+
+            </div>
+            <div class="step" id="step-5">
+                <div class="step-number">5</div>
+                <div class="step-text">
+                    Falte das Blatt in der Mitte zusammen.    
+                </div>
+                <div class="image-container">
+                    <img class="step-image" src="../images/Gleiter 2_13.jpg" alt="Schritt: $STEP_ID" onclick="showModal(this)">                   
+                </div>
+
+            </div>
+            <div class="step" id="step-6">
+                <div class="step-number">6</div>
+                <div class="step-text">
+                    Daraufhin werden Flügel umgeknickt. Lasse etwa 1-1,5 Zentimeter Abstand von der Unterkante als Griffkante.    
+                </div>
+                <div class="image-container">
+                    <img class="step-image" src="../images/Gleiter 2_14_1.jpg" alt="Schritt: $STEP_ID" onclick="showModal(this)">
+                    <img class="step-image" src="../images/Gleiter 2_14_2.jpg" alt="Schritt: $STEP_ID" onclick="showModal(this)">                   
+                </div>
+
+            </div>
+            <div class="step" id="step-7">
+                <div class="step-number">7</div>
+                <div class="step-text">
+                    Lege den Flieger auf seine Tragfläche um nun im letzten Schritt die Winglets zu falten.
+Knicke einfach von beiden Flügeln ein Stück nach oben hin ab.
+Damit ist der Gleiter 2 fertig. Viel Spaß beim Fliegen!    
+                </div>
+                <div class="image-container">
+                    <img class="step-image" src="../images/Gleiter 2_16_1.jpg" alt="Schritt: $STEP_ID" onclick="showModal(this)">
+                    <img class="step-image" src="../images/Gleiter 2_16_2.jpg" alt="Schritt: $STEP_ID" onclick="showModal(this)">                   
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="bottom_padding"></div>
+    <!-- Next Step Button -->
+    <button class="next-step-btn next-step-btn-right" onclick="scrollToNextStep()"><span style="position: relative; top: -3px;">↓</span></button>
+    <button class="next-step-btn next-step-btn-left" onclick="scrollToPrevStep()"><span style="position: relative; top: -3px;">↑</span></button>
+
+    <!-- Modal for full-size images -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Full size image" />
+        </div>
+    </div>
+
+    <script src="../flyai.js"></script>
+</body>
+</html>

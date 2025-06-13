@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jet - FLY.AI</title>
+    <link rel="stylesheet" href="../flyai.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">$LOGO</div>
+            <h1 class="header-title">FLY.AI</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Project Introduction -->
+        <section class="project-intro">
+            <h2 class="project-title">Jet</h2>
+            <div class="image-container final-product-container">
+                <img class="final-product" src="../images/Jet_main.jpg" alt="Final" onclick="showModal(this)">
+            </div>
+            <p class="project-description">
+                Dieses Flugzeugt sieht nicht nur cool aus wie ein Jet, sondern fliegt auch noch gut.
+Die dreieckigen Winglets lassen ihn schnittig durch die Luft sausen.
+            </p>
+        </section>
+
+        <!-- Steps -->
+        <div class="steps-container">
+                        <div class="step" id="step-1">
+                <div class="step-number">1</div>
+                <div class="step-text">
+                    Lege das Papier vor dich.    
+                </div>
+                <div class="image-container">
+                    <img class="step-image" src="../images/Jet_9.jpg" alt="Schritt: $STEP_ID" onclick="showModal(this)">                   
+                </div>
+
+            </div>
+            <div class="step" id="step-2">
+                <div class="step-number">2</div>
+                <div class="step-text">
+                    Falte das Papier längs in die Hälfte.    
+                </div>
+                <div class="image-container">
+                    <img class="step-image" src="../images/Jet_10.jpg" alt="Schritt: $STEP_ID" onclick="showModal(this)">                   
+                </div>
+
+            </div>
+            <div class="step" id="step-3">
+                <div class="step-number">3</div>
+                <div class="step-text">
+                    Falte nun die obere linke und rechte Kante zur mittleren Falz.    
+                </div>
+                <div class="image-container">
+                    <img class="step-image" src="../images/Jet_11.jpg" alt="Schritt: $STEP_ID" onclick="showModal(this)">                   
+                </div>
+
+            </div>
+            <div class="step" id="step-4">
+                <div class="step-number">4</div>
+                <div class="step-text">
+                    Jetzt bereitest du die Winglets vor indem du die unteren Ecken ebenfalls zur Mitte faltest. Lasse dabei nach oben zu den anderen Faltungen ca. 1cm frei, wie auf dem Bild gezeigt.    
+                </div>
+                <div class="image-container">
+                    <img class="step-image" src="../images/Jet_12.jpg" alt="Schritt: $STEP_ID" onclick="showModal(this)">                   
+                </div>
+
+            </div>
+            <div class="step" id="step-5">
+                <div class="step-number">5</div>
+                <div class="step-text">
+                    Wiederhole den vorletzten Schritt und falte wieder beide oberen Ecken zur Mittelfalz.    
+                </div>
+                <div class="image-container">
+                    <img class="step-image" src="../images/Jet_13_1.jpg" alt="Schritt: $STEP_ID" onclick="showModal(this)">
+                    <img class="step-image" src="../images/Jet_13_2.jpg" alt="Schritt: $STEP_ID" onclick="showModal(this)">                   
+                </div>
+
+            </div>
+            <div class="step" id="step-6">
+                <div class="step-number">6</div>
+                <div class="step-text">
+                    Jetzt kannst du die Winglets wieder zurückfalten. Lasse wie auf dem Bild nach links und rechts jeweils ein Stück frei.    
+                </div>
+                <div class="image-container">
+                    <img class="step-image" src="../images/Jet_15.jpg" alt="Schritt: $STEP_ID" onclick="showModal(this)">                   
+                </div>
+
+            </div>
+            <div class="step" id="step-7">
+                <div class="step-number">7</div>
+                <div class="step-text">
+                    Falte das Blatt in der Mitte zusammen.    
+                </div>
+                <div class="image-container">
+                    <img class="step-image" src="../images/Jet_16.jpg" alt="Schritt: $STEP_ID" onclick="showModal(this)">                   
+                </div>
+
+            </div>
+            <div class="step" id="step-8">
+                <div class="step-number">8</div>
+                <div class="step-text">
+                    Nun musst du die Tragflächen abknicken. Achte darauf, dass du ein Griffkante unten am Papierflieger von etwa 1-1,5 Zentimeter stehen lässt.    
+                </div>
+                <div class="image-container">
+                    <img class="step-image" src="../images/Jet_17_1.jpg" alt="Schritt: $STEP_ID" onclick="showModal(this)">
+                    <img class="step-image" src="../images/Jet_17_2.jpg" alt="Schritt: $STEP_ID" onclick="showModal(this)">                   
+                </div>
+
+            </div>
+            <div class="step" id="step-9">
+                <div class="step-number">9</div>
+                <div class="step-text">
+                    Falte die Flügel auf und damit ist der Gleiter fertig. Viel Spaß beim Fliegen!    
+                </div>
+                <div class="image-container">
+                    <img class="step-image" src="../images/Jet_19.jpg" alt="Schritt: $STEP_ID" onclick="showModal(this)">                   
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="bottom_padding"></div>
+    <!-- Next Step Button -->
+    <button class="next-step-btn next-step-btn-right" onclick="scrollToNextStep()"><span style="position: relative; top: -3px;">↓</span></button>
+    <button class="next-step-btn next-step-btn-left" onclick="scrollToPrevStep()"><span style="position: relative; top: -3px;">↑</span></button>
+
+    <!-- Modal for full-size images -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Full size image" />
+        </div>
+    </div>
+
+    <script src="../flyai.js"></script>
+</body>
+</html>
