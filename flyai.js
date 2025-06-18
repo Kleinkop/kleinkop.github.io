@@ -157,9 +157,19 @@ function updateCurrentStep() {
     });
 }
 
+var lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+function on_scroll(){ // or window.addEventListener("scroll"....
+   var st = window.pageYOffset || document.documentElement.scrollTop;
+   if (st > lastScrollTop) {
+      // downscroll code
+   } else if (st < lastScrollTop) {
+      // upscroll code
+   } // else was horizontal scroll
+   lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+}
+
 // Update current step on scroll
 window.addEventListener('scroll', updateCurrentStep);
-
 
 // Modal functionality for full-size images
 function showModal(element) {
